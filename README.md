@@ -1,2 +1,5 @@
 # DatavisTech
-Dit is DE repo voor datavis tech
+Bas de Roller
+500817947
+
+Functional programming
