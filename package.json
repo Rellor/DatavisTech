@@ -1,0 +1,22 @@
+{
+  "name": "datavistech",
+  "version": "1.0.0",
+  "description": "De datavis Functional programming app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rellor/DatavisTech.git"
+  },
+  "keywords": [
+    "Datavis"
+  ],
+  "author": "Bas de Roller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rellor/DatavisTech/issues"
+  },
+  "homepage": "https://github.com/Rellor/DatavisTech#readme"
+}
