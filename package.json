@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Rellor/DatavisTech/issues"
   },
-  "homepage": "https://github.com/Rellor/DatavisTech#readme"
+  "homepage": "https://github.com/Rellor/DatavisTech#readme",
+  "dependencies": {
+    "ejs": "^3.1.6"
+  }
 }
