@@ -1,4 +1,4 @@
-[
+export default [
   {
     "Wat is je favoriete soort huisdier?": "kat",
     "Wat is je oogkleur?": "Bruin",
