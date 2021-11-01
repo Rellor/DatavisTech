@@ -15,15 +15,10 @@ function parseData() {
     .then(res => { //functies hierin zetten als then
       let newObj = []
       let answer = removeCapitals(res);
-      newObj = [...answer]
-      console.log('newObj:', newObj);
-      return newObj;
-    })
-    .then(res => { //functies hierin zetten als then
-      let newObj = []
       let answer2 = fillEmptySpots(res);
+      newObj = [...answer]
       newObj = [...answer2]
-      console.log('newObj2:', newObj);
+      console.log('Filtered:', newObj);
       return newObj;
     })
     .catch((error) => { // voor als er iets mis gaat
@@ -50,6 +45,20 @@ function fillEmptySpots(obj){
 };
 
 parseData();
+
+fetch("https://imdb8.p.rapidapi.com/title/find?q=game%20of%20thr", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "imdb8.p.rapidapi.com",
+		"x-rapidapi-key": "cd85eabb64msh2d3c2b6fd59a1ddp141a81jsn42a3e8661e00"
+	}
+})
+.then(response => {
+	console.log(response);
+})
+.catch(err => {
+	console.error(err);
+});
 
   app.get('/', (req, res) => res.render('index.ejs', {
     datading: "hier komt het"
