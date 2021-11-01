@@ -34,7 +34,7 @@ function removeCapitals(obj){
 parseData();
 
   app.get('/', (req, res) => res.render('index.ejs', {
-    datading: "hier komt het"
+    datading: newObj
   }))
 
 
