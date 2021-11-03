@@ -4,7 +4,7 @@ const url = "https://raw.githubusercontent.com/cmda-tt/course-21-22/main/tech-tr
 
 const app = express()
 
-const port = process || 3000
+const port = process.env.PORT || 3000
 
 app.use(express.static('static'));
 app.set('view engine', 'ejs');
