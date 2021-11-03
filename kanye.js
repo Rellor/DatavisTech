@@ -16,12 +16,15 @@ function parseData() {
   return fetch(url) //Deze werkt ook als Promise
     .then(response => response.json())
     .then(res => { //functies hierin zetten als then
-      let answer = removeCapitals(res);
+      let answer = removeQuestionMarks(res);
+      let answer2 = removeCapitals(res);
       newObj = [...answer]
+      newObj = [...answer2]
       console.log('newObj!!:', newObj);
       return newObj;
       latenZien = newObj
     })
+
     .catch((error) => { // voor als er iets mis gaat
       console.log(error);
     });
@@ -30,6 +33,13 @@ function parseData() {
 function removeCapitals(obj){
   return obj.map((item) => {
     return item.toLowerCase();
+  });
+};
+
+function removeQuestionMarks(obj){
+  return obj.map((item) => {
+    return item.replaceAll("?", "");
+    console.log('no?:', newObj);
   });
 };
 
