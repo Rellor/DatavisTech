@@ -47,7 +47,7 @@ function fillEmptySpots(obj){ // function fillEmptySpots aanmaken en obj meegeve
 
 parseData();
 
-  app.get('/', (req, res) => res.render('index.ejs', {
+  app.get('/', (req, res) => res.render('index', {
     datading: "hier komt het"
   }))
 
