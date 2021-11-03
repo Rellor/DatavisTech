@@ -6,7 +6,13 @@
   </head>
   <body>
     <%- include ('main/head'); %>
-    <p><%- datading %></p>
+    <div>
+        <p>
+            <% for (let n = 0; n < datading.length; n++) { %>
+                 <%= datading[n] %> <br>
+            <% } %>
+        </p>
+    </div>
     <%- include ('main/footer'); %>
   </body>
 </html>
