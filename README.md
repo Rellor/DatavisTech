@@ -1,3 +1,5 @@
+![Banner](https://c.tenor.com/IVCnKbtTeRQAAAAM/programming-computer.gif)
+
 ## Wat is het project?
 Dit project is voor Functional programming. In dit project leren we werken met databronnen van het internet en lokaal. We halen data op, maken het schoon en laten het weer zien door middel van een bepaalde manier van programmeren. Deze manier is [Functional programming](https://github.com/Rellor/DatavisTech/wiki/Functional-programming). De opdracht is het maken van functies om een [dataset](https://github.com/Rellor/DatavisTech/wiki/Opschonen-dataset) schoon te maken en dit te documenteren. Het gaat voornamelijk om het leren dus research = key. Wil je de specifieke doelen bekijken van dit project? Bekijk deze dan in de [rubric](https://github.com/Rellor/DatavisTech/wiki/Rubric)
 
