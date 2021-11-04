@@ -1,54 +1,43 @@
-import express from 'express';
-import fetch from 'node-fetch';
+import express from 'express'
+import fetch from 'node-fetch'
 // const url = "https://api.kanye.rest";
-const url = "https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json";
+const url = "https://raw.githubusercontent.com/ajzbc/kanye.rest/master/quotes.json"
+
+import {removeQuestionMarksModule} from './modules/removeQuestionMarks.js'
+import {removeCapitalsModule} from './modules/removeCapitals.js'
+import {removeDotsModule} from './modules/removeDots.js'
+import {removeExclamationMarksModule} from './modules/removeExclamationMarks.js'
 
 const app = express()
 
-const port = 3000;
+const port = 3000
 
-app.use(express.static('static'));
-app.set('view engine', 'ejs');
+app.use(express.static('static'))
+app.set('view engine', 'ejs')
 
-let newObj = []
+let outcome1 = []
+let outcome2 = []
+let outcome3 = []
+let outcome4 = []
 
 function parseData() {
   return fetch(url) //Deze werkt ook als Promise
-    .then(response => response.json())
-    .then(res => { //functies hierin zetten als then
-      let answer = removeQuestionMarks(res);
-      let answer2 = removeCapitals(res);
-      newObj = [...answer]
-      newObj = [...answer2]
-      console.log('newObj!!:', newObj);
-      return newObj;
-      latenZien = newObj
-    })
-
+    .then(res => res.json())
+    .then(res => { outcome1 = removeQuestionMarksModule(res); return outcome1 })
+    .then(res => { outcome2 = removeCapitalsModule(outcome1); return outcome2 })
+    .then(res => { outcome3 = removeDotsModule(outcome2); return outcome3 })
+    .then(res => { outcome4 = removeExclamationMarksModule(outcome3); return outcome4 })
     .catch((error) => { // voor als er iets mis gaat
-      console.log(error);
+      console.log(error)
     });
 };
 
-function removeCapitals(obj){
-  return obj.map((item) => {
-    return item.toLowerCase();
-  });
-};
-
-function removeQuestionMarks(obj){
-  return obj.map((item) => {
-    return item.replaceAll("?", "");
-    console.log('no?:', newObj);
-  });
-};
-
   app.get('/', (req, res) => res.render('index.ejs', {
-    datading: newObj
+    datading: outcome4
   }))
 
-parseData();
+parseData()
 
 app.listen(port, () => {
-   console.log(`Example app listening at http://localhost:${port}`);
+   console.log(`Example app listening at http://localhost:${port}`)
  })
