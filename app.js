@@ -18,7 +18,6 @@ function parseData() {
       let answer2 = fillEmptySpots(res);
       newObj = [...answer]
       newObj = [...answer2]
-      console.log('newObj!!:', newObj);
       return newObj;
     })
     .catch((error) => { // voor als er iets mis gaat
@@ -38,7 +37,6 @@ function fillEmptySpots(obj){ // function fillEmptySpots aanmaken en obj meegeve
     let str = item["Wat wil je worden als je groot bent?"]; // de uitkomst van item een string maken en die str noemen
     if (str == "") { // if statement maken dat als str leeg is dan...
       return "leeg"; // het antwoord leeg meegeven als de string leeg is
-      console.log('str:',str); // console log str om te kijken of het heeft gewerkt
     } else { // else statement
       return str // de normale uitkomst van str meegeven als het veld niet leeg is
     }
