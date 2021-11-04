@@ -1,0 +1,384 @@
+HOME
+Welkom! In deze wiki is alles te vinden over mijn leerproces van de laatste 2 weken!
+
+![PRAISE THE SUN](https://media4.giphy.com/media/AQRapWCgC7dThyVEYb/200.gif)
+
+# 🗂️ Project
+**[Home](https://github.com/Rellor/DatavisTech/wiki)**<br>
+[Peer review](https://github.com/Rellor/DatavisTech/wiki/Peer-review)<br>
+[Rubric](https://github.com/Rellor/DatavisTech/wiki/Rubric)
+
+# 📖 Logboek
+**[Logboek](https://github.com/Rellor/DatavisTech/wiki/Logboek)**
+
+# 🧹 Data cleaning
+**[Data cleaning](https://github.com/Rellor/DatavisTech/wiki/Opschonen-dataset)**
+
+# 🔎 Research
+**[Funcional programming](https://github.com/Rellor/DatavisTech/wiki/Functional-programming)**<br>
+**console.log**<br>
+**API's**
+
+# ✒️ Notities
+
+SIDEBAR
+# 🗂️ Project
+**[Home](https://github.com/Rellor/DatavisTech/wiki)**<br>
+**[Peer review](https://github.com/Rellor/DatavisTech/wiki/Peer-review)<br>**
+**[Rubric](https://github.com/Rellor/DatavisTech/wiki/Rubric)**
+
+# 📖 Logboek
+**[Logboek](https://github.com/Rellor/DatavisTech/wiki/Logboek)**
+
+# 🧹 Data cleaning
+**[Data cleaning](https://github.com/Rellor/DatavisTech/wiki/Opschonen-dataset)**
+
+# 🔎 Research
+**[Funcional programming](https://github.com/Rellor/DatavisTech/wiki/Functional-programming)**<br>
+**[Console.log](https://github.com/Rellor/DatavisTech/wiki/console.log)**<br>
+
+# ✒️ Notities
+**[Joost Faber](https://github.com/Rellor/DatavisTech/wiki/College-Joost-Faber)**
+
+PEER REVIEW
+Ik ga de Github van Randy peer reviewen. Om elkaar feedback te kunnen geven maken we gebruik van issues. Hiermee maken we een soort to do list waaraan de ander kan gaan werken. Naast elkaars code gaan we ook kijken naar de WIKI en de README.
+
+Punten die ik heb gevonden:
+- <style> vervangen met een aparte css file.
+- Home pagina updaten.
+- Meer van de research laten zien.
+- Informatie geven bij de live demo
+- Opschoning van de dataset laten zien (welke delen worden er opgeschoont?)
+- Kijken of er nog branches verwerkt kunnen worden in het project
+- Comments in de code zetten over hoe alles werkt
+
+Feedback Randy:
+
+- Logboek headers duidelijk aangeven
+- Code stukken in de WIKI in een code blok zetten
+- Niet de README vergeten
+- Proberen meer comments in de code te zetten
+- console.log() verwijderen voor de oplevering
+
+Ik ben erg dankbaar voor deze feedback en ik ga ze allemaal een voor een verwerken in mijn project!
+
+Rubric
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th><strong>1-2</strong></th>
+      <th><strong>3-4</strong></th>
+      <th><strong>5-6</strong></th>
+      <th><strong>7-8</strong></th>
+      <th><strong>9-10</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th align="center" scope="row"><strong>Application</strong> of subject matter</th>
+      <td align="center">Git, is used; the project runs without errors; data is loaded; there is a representation of data</td>
+      <td align="center"><strong>Data is sanitized and transformed</strong>; interpreting the representation is easier that interpreting the data itself</td>
+      <td align="center"><strong>Functional patterns are used to clean and transform data. </strong></td>
+      <td align="center">Representation and <strong>use of chaining</strong>
+      strong> go beyond an example. Code is set up in a modular way and has no unexpected side effects</td>
+      <td align="center">😱<br>The way the student applies subject matter  is more advanced than what they were taught in class; let’s switch places</td>
+    </tr>
+    <tr>
+      <th align="center" scope="row">Understanding</th>
+      <td align="center">There is substantial own code; the student can explain the code that exists</td>
+      <td align="center">The student can explain some parts of their code, how some parts works together, and some technical choices</td>
+      <td align="center">The student can explain every part of their code, how everything works together, and why patters are used instead of alternatives; the project is structured logically</td>
+      <td align="center">The project is complex but can easily be understood; alternatives to patterns covered in class was used that were great choices</td>
+      <td align="center">🤓<br>The student deeply understands functional programming and can create their own functional code flows</td>
+    </tr>
+    <tr>
+      <th align="center" scope="row">Quality</th>
+      <td align="center">The project is handed in on time, working, documented, and on GitHub</td>
+      <td align="center">Code style is consistent; code and project  are partially documented</td>
+      <td align="center">Code adheres to standards; docs cover what the project is and does</td>
+      <td align="center">Code quality is good and enforced; docs are useful and professional</td>
+      <td align="center">📚<br>Code and docs both read like great books</td>
+    </tr>
+    <tr>
+      <th align="center" scope="row">Process</th>
+      <td align="center">Process is partially documented in the wiki</td>
+      <td align="center">Process is properly documented</td>
+      <td align="center">Choices are evaluated and documented; progress is demonstrated; Work tells a story</td>
+      <td align="center">Significant progress or iterations are demonstrated; Storytelling principles are applied</td>
+      <td align="center">💪<br>What you did this course is amazing; Teachers are in awe of your progress</td>
+    </tr>
+  </tbody>
+</table>
+
+LOGBOEK
+### Dag 1: Maandag 25/10/2021
+Vandaag de eerste les van het vak gehad. We hebben een formulier ingevuld en op basis van dit formulier zijn we in groepjes opgedeeld. Verder kregen we ook een aantal vragen in dat formulier waarvan uiteindelijk onze eerste dataset is gemaakt. Nu gaat het onze taak zijn om hiervoor een programmaatje te maken om datasets op te schonen. Eerst begon ik met het omzetten van deze dataset naar excel zodat ik kon zien welke soort opschoning ik wil gaan maken door middel van Javascript. Deze bevindingen per vraag had ik genoteerd in mijn Wiki onder het kopje Opschonen dataset.
+
+_**Check-out:**_ Iedereen zit nog even te zoeken wat ze willen gaan doen. Een paar weten wel al een beetje de richting maar moeten toch nog eventjes kijken. Het gaat wel lekker tot nu toe en het groepje wil elkaar graag helpen.
+
+### Dag 2: Dinsdag 26/10/2021
+Vandaag ben ik in de ochtend naar school geweest om de presentatie te bekijken. Dit was even een korte samenvatting van vorig blok maar ik heb toch wel wat handige dingen kunnen noteren. (ZET HIER DE HANDIGE DINGEN) Helaas voelde ik me niet lekker en ben ik na de les naar huis gegaan en ben ik daar gaan uitrusten/slapen.
+
+**_Check-out:_** Deze checkout heb ik helaas gemist vandaag ivm ziekte.
+
+### Dag 3: Woensdag 27/10/2021
+Ik ben vandaag niet naar de les geweest omdat ik mij nogsteeds niet goed voelde. Ik ga wel verder met mijn opdracht. Ik heb mijn Node opgezet met EJS. Verder heb ik het voor elkaar gekregen om een JSON file te zetten in mijn website door middel van een require. Het probleem waar ik nu tegenaan loop is dat ik alleen maar [object Object] krijg te staan op de plekken waar de data zou moeten staan. Hier ga ik morgen naar kijken.
+
+_**Check-out:**_ Deze checkout heb ik helaas gemist vandaag ivm ziekte.
+
+### Dag 4: Donderdag 28/10/2021
+Vandaag ben ik meteen begonnen met het zien/filteren van de data. Om dit te kunnen doen heb ik een main function aangemaakt waarin ik de vraag heb staan die ik wil filteren. Verder heb ik een kort stukje code gemaakt om de vraag uit de dataset te filteren en die data om te zetten naar kleine letters. Wat nu nog het probleem is is dat alles zonder enter staat op de uitkomst.
+
+Ik ben opnieuw begonnen met mijn functies omdat de code niet binnen functioneel programmeren viel. Nu ben ik met de hulp van Robert een stuk verder en heb ik mijn JSON in kunnen laden. Ik liep steeds vast omdat ik mijn bestand wou fetchen terwijl dit helemaal niet hoeft. Nu heb ik mijn bestand geimport en heb ik door middel van het code voorbeeld en mijn eigen toevoegingen een overzicht gekregen van alle data. Ook zijn de legen vakken gefilterd. Nu wil ik alleen een specifiek antwoord zien.
+
+_**Checkout:**_ Vandaag was niet echt een spannende dag. Het team heeft wel een hoop kunnen doen en ik heb hulp gekregen van Davey. De checkout heb ik gedaan met Davey en Randy.
+
+### Dag 5: Vrijdag 29/10/2021
+
+_**Stand-up:**_ Vandaag is er rond de tijd dat we de stand-up doen niemand van mijn originele groepje aanwezig. Met het groepje waar ik nu mee zit (en gisteren ook de checkout mee deed) hebben we besloten in de ochtend een stand-up te doen ipv een checkout. Randy was gisteren bezig geweest met fetch. Ook heeft hij zijn code gerefactored. Vandaag gaat Randy aan de documentatie zitten (README en WIKI). Davey is bezig geweest met het verwerken van een promise. Ook heeft hij een aantal functies toegevoegd en heeft hij de WIKI geupdate. Hij wil proberen een bar chart te implementeren. Jelle heeft zijn functies dynamisch gemaakt en gaat vandaag een filter functie maken.
+
+Vandaag ga ik proberen om een functie te maken waarmee ik naar lege plekken kijk in de data en deze vul met een bepaalde tekst. Ik weet niet zo goed waar ik moet beginnen dus ik ga eerst nog wat onderzoek doen naar hoe ik dat kan gaan doen. Na wat onderzoek naar console.log voor debugging (LINK NAAR ONDERZOEK) ben ik gaan werken aan de functie. Dit is nu ook gelukt. Waar ik nu alleen tegenaan loop is dat beide filters niet in een keer aangezet kunnen worden. Wanneer dat gebeurt staat het eerste deel goed en werkt het filter ook. Maar bij het 2e deel staat er undefined. Ik denk dat als ik beide filters in een rij kan zetten dat ik dat voorkom. Wat dus nu de volgende stap is het combineren van beide filters in een rij uitkomsten.
+
+### Dag 6: Maandag 01/11/2021
+_**Stand-up:**_ met 8 man standup gedaan. Iedereen was goed opweg. We hebben allemaal een API uitgekozen en gaan daar morgen weer mee verder. Ik ben vandaag ook gaan kijken naar API's. Na twijfelen tussen muziek API's en een API voor IMDB had ik toch gekozen voor de meest logische. De Kanye.rest api. Vervolgens heb ik een nieuwe file aangemaakt om de API te testen en te laten zien en op te schonen in mijn console.
+
+Vandaag ben ik op onderzoek uitgegaan naar API's. Na een tijdje kijken en vergelijken vond mij het leuk om de kanye.rest API te gebruiken. Deze API laat elke keer een random Kanye West quote zien als je op een bepaalde knopt klikt. Om deze API te gebruiken moest ik hem fetchen. Dit had ik gelukkig al eerder in het project gedaan dus dit ging eigenlijk best makkelijk. Toen ik de fetch had ben ik verder gegaan met het omzetten van mijn code zodat ik de data kan laten zien en mijn eerste functies al kon gaan implementeren. Ik kreeg beide functies los van elkaar werkend maar had een fout elke keer als ik de functies samen wou voegen. Ik ben voor hulp naar Robert gegaan en samen met hem is het me gelukt om mijn data samen te voegen en in de console te laten zien!
+
+### Dag 7: Dinsdag 02/11/2021
+_**Stand-up:**_ Vandaag hebben we een erg korte stand-up gedaan. Iedereen was druk bezig met het verbeteren van hun code of het maken van de wiki.
+
+Vandaag had ik 2 doelen gezet voor mezelf. 1 het omzetten van de console log naar een werkelijke output in de html. Dit is me ook gelukt vandaag! Dit heb ik gedaan door een losse `let newObj = []` aan te maken bovenaan mijn bestand. Deze vul ik vervolgens in een functie eronder met alle filters en gebruik ik dan newObj bij mijn output naar html
+  ```javascript
+  .then(res => {
+      let answer = removeCapitals(res); //Answer is de uitkomst van de functie removeCapitals
+      newObj = [...answer] //Answer word verwerkt doormiddel van een Spread syntax (de ...)
+      console.log('newObj!!:', newObj); //test of het werkt in de console
+      return newObj; //returnen van newObj
+      })
+```
+
+Vervolgens ben ik onderzoek gaan doen naar de verschillende manieren om [Console.log()](https://github.com/Rellor/DatavisTech/wiki/console.log) te gebruiken. Dit is niet zo zeer een must know maar zou zeker wel van pas kunnen komen bij volgende projecten wanneer ik toch meer wil gaan doen met de console.
+
+### Dag 8: Woensdag 03/11/2021<br>
+_**Standup:**_ Iedereen heeft elkaar een peer review gegeven! Verder gaat het over het algemeen goed en lopen we niet ergens tegenaan.
+
+vandaag begonnen met het deployen van mijn app. Voor deployment gebruik ik [Heroku](https://dashboard.heroku.com/login). Het ging wat moeizaam om de boel aan de praat te krijgen dus het had een aantal testen nodig om te kijken of alles goed ging. Uiteindelijk deed het deployen het toen ik mijn port had veranderd naar `const port = process.env.PORT || 3000`. Toen ik een server had kreeg ik direct een foutmelding. Het duurde eerst even voordat ik had gevonden waardoor deze melding nou kwam en toen zag ik het. Ik had `index `geschreven inplaats van `Index`... Gelukkig kon ik daarna wel zien wat ik had gemaakt! Alleen was er weer een fout. Deze had te maken met de style. Die heb ik nu nog over geslagen omdat ik dat minder belangrijk vond dan de functies en het goedzetten van mijn output. Daar ging ik namelijk mee verder. Ik had namelijk wel al output maar die was aan elkaar en dat wil je natuurlijk niet. Tom werkt ook met Node en EJS en hij had het zelfde probleem al gehad. Ik kon met hulp van hem een stukje code schrijven in mijn index om ervoor te zorgen dat alle regels ook werkelijk op een nieuwe regel beginnen.
+```html
+<div>
+  <p>
+    <% for (let n = 0; n < datading.length; n++) { %> //var n maken die 0 is. Wanneer de input van datading meer is dan 0 dan een bij n erbij doen
+      <%= datading[n] %> <br> //n zetten in datading zodat die per rij 1 word en een br erachter zet en weer opnieuw gaat. Hierdoor loopt de br steeds over de input
+    <% } %>
+  </p>
+</div>
+```
+nadat dit werkend was ben ik verder gegaan met een nieuwe functie omdat een van de oudere functies niet meer nodig zal zijn bij mijn nieuwe dataset. Deze functie gaat het verwijderen van ? zijn. Om dit te doen heb ik dit stukje code gemaakt:
+```javascript
+function removeQuestionMarks(obj){ // function removeCapitals aanmaken en obj meegeven
+  return obj.map((item) => { // object mappen en daar item vandaan halen
+    return item.replaceAll("?", ""); //de data van item pakken en hierin ? zoeken en vervangen met een leeg vak
+    console.log('no?:', newObj); //console log als test of het werkt
+  });
+};
+```
+
+Dag 9: Donderdag 03/11/2021<br>
+_**Standup:**_ Vandaag was er geen stand-up of checkout geweest. Iedereen ging zijn ding doen en nog hard aan het werk!
+
+Vandaag is de grote dag. Het inlevermoment. Ik ben nog druk bezig geweest met het maken van 2 nieuwe functies voor het weghalen van punten en uitroeptekens. Ook ben ik alles in modules gaan zetten en heb ik mijn code een stuk netter gemaakt kunnen maken doormiddel van die modules.
+Om een module te kunnen gebruiken maak ik gebruik van import. Eerst ging het steeds verkeerd totdat ik documentatie zag die mij vertelde dat ik ergens {} omheen moest zetten en toen werkte het! Dit is hoe je de import kan doen:
+```javascript
+import {removeQuestionMarksModule} from './modules/removeQuestionMarks.js'
+```
+Verder ziet de nieuwe code op basis van de modules er zo uit:
+```javascript
+//hoofdfile
+.then(res => { outcome1 = removeQuestionMarksModule(res); return outcome1 }) //eerste output pakt de res op, gooit de function eroverheen en gooit outcome1 eruit
+.then(res => { outcome2 = removeCapitalsModule(outcome1); return outcome2 }) //tweede output pakt de uitkomst op van de eerste then, gooit de functie eroverheen en gooit outcome2 eruit
+//zo gaat het vervolgens door tot outcome 4 waar alle functies in een zitten
+
+//module file
+export const removeQuestionMarksModule = obj => obj.map(item => item.replaceAll("?", "")) // ik maak een export aan die removeQuestionMarksModule heet. vervolgens voer ik de oude code uit maar nu zit het allemaal in een regel!
+```
+Na het maken van deze modules ben ik verder gegaan aan de README en de peer feedback punten.
+
+DEADLINE: 17:00
+
+DATA CLEANING
+Deze week hebben we een dataset die we zelf hebben gemaakt als klas. Deze dataset is nog niet schoon en het is dus onze taak om functies te maken zodat het opschonen een stuk makkelijker gaat bij andere datasets. In het bestand hieronder staan mijn notities per dataset vraag over wat er gedaan zou kunnen worden kwa schoonmaken. Dit maakt het makkelijker voor mij om te kiezen welke functie(s) ik wil gaan maken.
+
+_Ik haal alle rijen uit de dataset en bekijk wat er allemaal aangepast zou moeten worden per rij._
+
+**Rij A Wat is je fav huisdier?** <br>
+Er is een rij die dubbel is, Er zijn een paar specifieke soorten huisdier opgenoemd
+
+**Rij B Wat is je oogkleur?** <br>
+Er zijn dubbele kleuren, Kleurcodes van maken?
+
+**Rij C Wat is je favoriete windrichting** <br>
+Allemaal goed
+
+**Rij D Hoeveel zin heb je in blok tech?** <br>
+Allemaal goed
+
+**Rij E Kies zelf of je deze vraag beantwoord.** <br>
+Lege vakken, rare tekst
+
+**Rij F Wat is je favoriete datum?** <br>
+Datum is erg uit elkaar
+
+**Rij G Wat is je favoriete datum? (in tekst)** <br>
+Datums/gebeurtenissen, Rare tekst
+
+**Rij H Wat is je favoriete zuivelproduct** <br>
+Het lactose antwoord zou ingekort moeten worden
+
+**Rij I Welke kleur kledingstukken heb je aan?** <br>
+Veel verschillende opties in een vak, color codes?
+
+**Rij J Op welke verdieping van TTH studeer je het liefst?** <br>
+Tekst en nummers (moeten nummers worden), -1 als antwoord
+
+**Rij K Wat wil je worden als je groot bent?** <br>
+paar lege vakken, Antwoorden die korter kunnen of hetzelfde zijn en anders zijn verwoord.
+
+**Rij L Wat zou je vroeger worden toen je groot was?** <br>
+Lege vakken, Rare letters
+
+**Rij M Kaas is ook een zoogdier?** <br>
+Veel verschillende dingen, Nummers en rare letters
+
+**Rij N Welk merk auto zou je later willen kopen?** <br>
+Lege vakken, Auto's zijn opgenoemd en moeten merken worden, "Maakt me niet uit" of "weet ik niet" in een ding zetten
+
+Om deze data te verwerken en op te schonen heb ik 2 functies gemaakt. Het weghalen van hoofdletters en het vervangen van lege vakken.
+
+```javascript
+function removeCapitals(obj){ // function removeCapitals aanmaken en obj meegeven
+  return obj.map((item) => { // object mappen en daar item vandaan halen
+    return item["Wat wil je worden als je groot bent?"] // de item "wat wil je worden.." uit de obj halen
+    .toLowerCase(); // de uitkomst van item pakken en dit omzetten naar kleine letters
+  });
+};
+
+function fillEmptySpots(obj){ // function fillEmptySpots aanmaken en obj meegeven
+ return obj.map((item) => { // object mappen en daar item vandaan halen
+    let str = item["Wat wil je worden als je groot bent?"]; // de uitkomst van item een string maken en die str noemen
+    if (str == "") { // if statement maken dat als str leeg is dan...
+      return "leeg"; // het antwoord leeg meegeven als de string leeg is
+      console.log('str:',str); // console log str om te kijken of het heeft gewerkt
+    } else { // else statement
+      return str // de normale uitkomst van str meegeven als het veld niet leeg is
+    }
+  });
+};
+```
+
+FUNCTIONAL PROGRAMMING
+Ik ben een video gaan kijken over het gebruiken van functional programming. Deze video is: [Learning Functional Programming with Javascript by Anjana Vakil (JSUnconf)](https://www.youtube.com/watch?v=e-5obm1G_FY&t=8s&ab_channel=JSConf) op YouTube.
+
+functional programming is wat minder strikt kwa plaatsing. Je hoeft niet alles in een functie te stoppen.
+
+**voorbeeld:**
+```javascript
+var name = "Bas"
+var greeting = "Hoi, ik ben";
+console.log(greeting + name);
+
+functional programming:
+function greet(name) {
+return "Hoi, ik ben" + name;
+}
+greet("Bas");
+```
+het is een stuk overzichtelijker omdat alles in een functie staat.
+
+### Pure functions
+een pure functie haalt alleen data uit je code en veranderd er verder niks aan als het niet in de functie staat. Je wilt dat je functie alleen `input` pakt. Daarmee iets doet en het dan als `output` uitstuurt en niks anders.
+
+### Higher order functions
+Het gebruiken van functions binnen functions. dus bijvoorbeeld als output.
+
+**voorbeeld:**
+```javascript
+function makead(ad) {
+return function (string) {
+return ad + " " + string;
+};
+}
+
+var coolifier = makead("cool");
+coolifier("bord");
+output: cool bord
+```
+
+Binnen functional programming wil je niet gebruik maken van `iterating`. Dit is het gebruiken van `for` of `while`. In plaats daarvan zou je higher order functions willen gebruiken zoals `map`, `reduce` of `filter`
+
+Als je een data lijst heb en je wil die data veranderen in een bepaalde manier. Als je `map` gebruikt hiervoor kan je elk item nagaan in een keer. Heb je bijvoorbeeld verschillende soorten categorieën maar wil je overal een hoofdletter bij hebben? dan haal je deze allemaal door 1 `map` functie en dan heb je ze allemaal in een keer.
+
+Wanneer je dit hebt kan je `reduce` gebruiken om alle items die bij elkaar horen bij elkaar te zetten.
+
+`Filter` kan je gebruiken om te zorgen dat bepaalde categorieën er helemaal niet doorheen komen.
+
+Bij functional programming wil je ook het muteren van data verkomen. En mooi voorbeeld is:
+```javascript
+kamers =[1, 2, 3];
+kamers[2] = 4;
+```
+
+Dit is niet goed. 1 omdat er geen `""` staat maar daar gaat het nu niet om. 2 omdat er nu overal `1,2,4` staat. Bij functional programming blijft `1,2,3` globaal het zelfde maar veranderd alleen in de function.
+
+om efficiënt te werken kan je ook gebruik maken van `structural sharing`. Dit houd in dat je bij een array niet steeds een nieuwe maakt maar gebruik maakt van de oude maar er een soort node aan toe voegt. Wat de spreker voorsteld is [Mori](https://swannodette.github.io/mori/). Deze app gebruikt ClojureScript.
+
+Andere apps zijn: [Immutable.js](https://immutable-js.com/), [Underscore](https://underscorejs.org/), [Lodash](https://lodash.com/) en [Ramda](https://ramdajs.com/)
+
+CONSOLE.LOG
+Om te kunnen debuggen kan je console.log() gebruiken. Hiermee kan je vanalles zien in de console. Om ervoor te zorgen dat je zo goed mogelijk een fout kan vinden is het mogelijk om de console.log te stylen. Er bestaan een aantal standaard log methodes. Deze zijn:
+
+```javascript
+console.log('console.log');
+console.info('console.info');
+console.debug('console.debug');
+console.warn('console.warn');
+console.error('console.error');
+```
+
+Per log heb je een verschillende soort stijl. Die stijlen zijn hier te zien:
+
+![log style](https://coderwall-assets-0.s3.amazonaws.com/uploads/picture/file/2099/chrome.jpg)
+
+Ook is het mogelijk om de console log te stijlen via `%c`. Hier is een voorbeeld:
+```javascript
+console.log('%cThis text will now be blue and large', 'color: blue; font-size: x-large');
+```
+
+[Goudoulakis, S. (2020, 7 oktober). Enhance your JS console logging messages (Example). Coderwall. Geraadpleegd op 2 november 2021, van https://coderwall.com/p/m2trga/enhance-your-js-console-logging-messages](https://coderwall.com/p/m2trga/enhance-your-js-console-logging-messages)
+
+JOOST FABER
+## Async
+
+### Event loop
+Een event loop is de motor van javascript. De call stack is de plek waar alle functies die uitgevoerd gaan worden staan. Als ze zijn uitgevoerd gaan ze er ook weer uit.
+
+### Debuggen
+bij console f12 kan je via sources breakpoints zetten om te kunnen debuggen. Hierdoor kan je stapje voor stapje door je script. Verder kan je local en een global scope vinden. Dit zou je eventueel ook kunnen gebruiken bij het debuggen van je code. Je hoeft dus niet console.log te gebruiken
+
+### Block scope:
+bestaat alleen binnnen een blok (bijvoorbeeld een if statement)
+```javascript
+if (true) {
+const pipo = clown
+}
+```
+### Function scope:
+bestaat alleen binnen functie
+
+### Modual scope:
+bepaalde bestanden zijn modules. je kan dus per functie een aparte file aanmaken en die importeren. Alle variabelen in deze module zit dus alleen in dat bestand.
+
+### Verschillende async manieren
+`XMLhttp`, `promise`, `fetch` en `async` zijn allemaal `async`. `XML` is het oudste. Een `promise` is hetzelfde als de **XML** alleen is het overzichtelijker door chainen (`.then`). `Fetch` is een **promise** maar dan een stuk simpeler. Je begint met een `.then` om het hele document terug te krijgen en daarna kan je weer verder met een `.then` net zoals een **promise**. Ook werkt `async await` op een **promise**. Het deel `await` zorgt ervoor dat de regel erachter wacht todat de regel erboven uitgevoerd is.
+
+### Handige bron
+[platform.html5.org](https://platform.html5.org/) is een site met allemaal soorten browser APIs vanuit de browser.
