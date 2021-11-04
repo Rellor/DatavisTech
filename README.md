@@ -21,9 +21,7 @@ In dit project heb ik 2 verschillende datasets gebruikt. Een van deze komt direc
 ### App klonen
 Eerst moet je de repository klonen. Dit kan je doen door in de terminal [`gh repo clone Rellor/DatavisTech`](https://github.com/Rellor/DatavisTech) te zetten. Als je dat hebt gedaan moet je alle benodigde packages installeren. Dit kan via `npm install` in de terminal. Eerst heb je [`node.js`](https://nodejs.org/en/) nodig op je computer.
 
-## Deployment
-Je kan de draaiende app vinden op: 
-LINK APP
+Vervolgens kan je in de terminal `nodemon app.js` zetten voor de eerste versie van mijn app en `nodemon kanye.js` voor de nieuwste versie van mijn app!
 
 ## Bronnen
 Bij mijn project heb ik hulp gekregen van een verschillend aantal bronnen. Deze bronnen bestaan uit:
