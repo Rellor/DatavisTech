@@ -2,7 +2,7 @@
   "name": "datavistech",
   "version": "1.0.0",
   "description": "De datavis Functional programming app",
-  "main": "app.js",
+  "main": "kanye.js",
   "type" : "module",
   "scripts": {
     "start": "nodemon server.js"
